@@ -1,0 +1,131 @@
+?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Facebook Profile"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#3b5998"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" />
+
+    <ImageView
+        android:id="@+id/img_profile"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@android:drawable/sym_def_app_icon"
+        android:layout_below="@id/tv_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="athulya"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_below="@id/img_profile"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp" />
+
+
+    <TextView
+        android:id="@+id/tv_role"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="student"
+        android:textSize="16sp"
+        android:layout_below="@id/tv_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="4dp" />
+
+
+    <ImageView
+        android:id="@+id/icon_home"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_below="@id/tv_role"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="59dp"
+        android:layout_marginTop="12dp"
+        android:src="@android:drawable/ic_menu_view" />
+
+    <TextView
+        android:id="@+id/tv_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Home"
+        android:textSize="14sp"
+        android:layout_below="@id/icon_home"
+        android:layout_alignStart="@id/icon_home"
+        android:layout_marginTop="4dp" />
+
+
+    <ImageView
+        android:id="@+id/icon_chat"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_below="@id/tv_role"
+        android:layout_marginStart="123dp"
+        android:layout_marginTop="14dp"
+        android:layout_toEndOf="@id/icon_home"
+        android:src="@android:drawable/ic_dialog_email" />
+
+    <TextView
+        android:id="@+id/tv_chat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chat"
+        android:textSize="14sp"
+        android:layout_below="@id/icon_chat"
+        android:layout_alignStart="@id/icon_chat"
+        android:layout_marginTop="4dp" />
+
+    <ImageView
+        android:id="@+id/icon_edit"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_below="@id/tv_role"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="36dp"
+        android:src="@android:drawable/ic_menu_edit" />
+
+    <TextView
+        android:id="@+id/tv_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edit"
+        android:textSize="14sp"
+        android:layout_below="@id/icon_edit"
+        android:layout_alignStart="@id/icon_edit"
+        android:layout_marginTop="4dp" />
+
+    <TextView
+        android:id="@+id/tv_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lives in Kozhikode"
+        android:textSize="16sp"
+        android:layout_below="@id/tv_home"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp" />
+
+    <TextView
+        android:id="@+id/tv_college"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="KMCT college of Engineering"
+        android:textSize="16sp"
+        android:layout_below="@id/tv_location"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp" />
+</RelativeLayout>
